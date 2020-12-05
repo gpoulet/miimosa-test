@@ -5,6 +5,7 @@ import { useApollo } from "../apollo/";
 import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import theme from '../styles/theme';
+import TopBar from '../components/TopBar'
 
 function App({ Component, pageProps }) {
   const apolloClient = useApollo(pageProps.initialApolloState);
@@ -21,6 +22,7 @@ function App({ Component, pageProps }) {
     <>
       <ThemeProvider theme={theme}>
         <CssBaseline/>
+        <TopBar />
         <ApolloProvider client={apolloClient}>
           <Component {...pageProps} />
         </ApolloProvider>
