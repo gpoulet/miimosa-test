@@ -4,7 +4,7 @@ import Container from '@material-ui/core/Container'
 
 function Home() {
   return (
-    <Container>
+    <Container maxWidth="sm">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico"/>

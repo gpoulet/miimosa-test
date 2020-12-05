@@ -22,7 +22,7 @@ const Details = () => {
   const project = data.projects.find(project => project.id === id)
 
   return (
-    <Container>
+    <Container maxWidth="md">
       <ProjectDetails {...project} />
       <Grid container justify="center" className="backButtonContainer">
 
