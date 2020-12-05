@@ -1,35 +1,43 @@
-import { string, number, object, shape } from "prop-types"
+import { string, number, shape } from "prop-types"
+import Description from '../Description'
+import Status from '../Status'
+import Title from '../Title'
+import Money from '../Money'
 import Card from "@material-ui/core/Card"
-import CardHeader from "@material-ui/core/CardHeader"
-import CardContent from '@material-ui/core/CardContent'
-import CardActions from "@material-ui/core/CardActions"
+import CardHeader from '@material-ui/core/CardHeader'
 import Avatar from '@material-ui/core/Avatar'
-import Status from './Status'
-import Money from './Money'
-import CardLink from './CardLink'
-import Title from './Title'
+import CardContent from '@material-ui/core/CardContent'
+import CardActions from '@material-ui/core/CardActions'
+import Button from '@material-ui/core/Button'
 
-function Project({ id, title, collected, target, status, user }) {
+function ProjectDetails({ title, collected, target, status, user }) {
+  const showParticipateButton = status === "in_progress"
   return (
-    <Card className="projectCard">
+    <Card className="projectCardDetails">
       <CardHeader
         avatar={<Avatar aria-label="recipe">{user.first_name[0]}</Avatar>}
         title={user.first_name}
         subheader={user.last_name}
-        action={<Status status={status} />}
+        action={<Status status={status}/>}
       />
       <CardContent>
         <Title title={title}/>
         <Money collected={collected} target={target} status={status}/>
+        <Description/>
       </CardContent>
+      {
+       showParticipateButton &&
       <CardActions>
-        <CardLink href={"/details/" + id} label="Découvrir"/>
+        <Button size="small" color="primary">
+          <a>Je veux participer</a>
+        </Button>
       </CardActions>
+      }
     </Card>
   )
 }
 
-Project.propTypes = {
+ProjectDetails.propTypes = {
   id: string.isRequired,
   title: string.isRequired,
   collected: number.isRequired,
@@ -40,10 +48,10 @@ Project.propTypes = {
   user: shape({
     first_name: string.isRequired,
     last_name: string.isRequired
-  }),
+  })
 };
 
-export default Project;
+export default ProjectDetails;
 
 //
 // "collected": 15000,

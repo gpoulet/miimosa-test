@@ -14,3 +14,24 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.projectCard {
+  margin: 10px 300px;
+}
+
+.projectCardDetails {
+  margin: 10px 200px;
+}
+
+.statusChip {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.backButtonContainer {
+  margin: 30px;
+}
+
+.description {
+  padding-top: 20px;
+}

@@ -1,21 +1,19 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 import Projects from '../components/Projects'
+import Container from '@material-ui/core/Container'
 
 function Home() {
   return (
-    <div className={styles.container}>
+    <Container>
       <Head>
         <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico"/>
+        <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width"/>
       </Head>
 
-      <main className={styles.main}>
-        <Projects/>
-      </main>
+      <Projects/>
 
-
-    </div>
+    </Container>
   )
 }
 

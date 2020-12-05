@@ -14,7 +14,7 @@ function Projects() {
   console.log("projects :", projects)
 
   return (
-    <div>projects:
+    <div>
       {projects.map(project => <Project {...project} key={project.id} />)}
     </div>
   )
