@@ -3,6 +3,7 @@ import Description from '../Description'
 import Status from '../Status'
 import Title from '../Title'
 import Money from '../Money'
+import Photo from '../Photo'
 import Card from "@material-ui/core/Card"
 import CardHeader from '@material-ui/core/CardHeader'
 import Avatar from '@material-ui/core/Avatar'
@@ -10,7 +11,7 @@ import CardContent from '@material-ui/core/CardContent'
 import CardActions from '@material-ui/core/CardActions'
 import Button from '@material-ui/core/Button'
 
-function ProjectDetails({ title, collected, target, status, user }) {
+function ProjectDetails({ id, title, collected, target, status, user }) {
   const showParticipateButton = status === "in_progress"
   return (
     <Card className="projectCardDetails">
@@ -20,6 +21,7 @@ function ProjectDetails({ title, collected, target, status, user }) {
         subheader={user.last_name}
         action={<Status status={status}/>}
       />
+      <Photo id={id}/>
       <CardContent>
         <Title title={title}/>
         <Money collected={collected} target={target} status={status}/>

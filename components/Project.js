@@ -1,29 +1,22 @@
 import { string, number, object, shape } from "prop-types"
 import Card from "@material-ui/core/Card"
-import CardHeader from "@material-ui/core/CardHeader"
 import CardContent from '@material-ui/core/CardContent'
 import CardActions from "@material-ui/core/CardActions"
-import Avatar from '@material-ui/core/Avatar'
-import Status from './Status'
 import Money from './Money'
 import CardLink from './CardLink'
 import Title from './Title'
+import Photo from './Photo'
 
 function Project({ id, title, collected, target, status, user }) {
   return (
     <Card className="projectCard">
-      <CardHeader
-        avatar={<Avatar aria-label="recipe">{user.first_name[0]}</Avatar>}
-        title={user.first_name}
-        subheader={user.last_name}
-        action={<Status status={status} />}
-      />
+      <Photo id={id} />
       <CardContent>
         <Title title={title}/>
         <Money collected={collected} target={target} status={status}/>
       </CardContent>
       <CardActions>
-        <CardLink href={"/details/" + id} label="Découvrir"/>
+        <CardLink href={"/details/" + id} label="Découvrir le projet"/>
       </CardActions>
     </Card>
   )
