@@ -1,7 +1,6 @@
 import { useQuery } from "@apollo/client";
 import { ALL_PROJECTS_QUERY } from '../apollo'
-
-
+import Project from "./Project"
 
 function Projects() {
   const { loading, error, data } = useQuery(ALL_PROJECTS_QUERY);
@@ -15,7 +14,9 @@ function Projects() {
   console.log("projects :", projects)
 
   return (
-    <div>projects</div>
+    <div>projects:
+      {projects.map(project => <Project {...project} key={project.id} />)}
+    </div>
   )
 }
 
