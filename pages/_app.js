@@ -2,10 +2,9 @@ import { useEffect } from 'react'
 import '../styles/globals.css';
 import { ApolloProvider } from "@apollo/client";
 import { useApollo } from "../apollo/";
-import { ThemeProvider } from '@material-ui/core/styles';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import theme from '../styles/theme';
 import TopBar from '../components/TopBar'
+import CustomThemeProvider from '../components/CustomThemeProvider'
+import CssBaseline from '@material-ui/core/CssBaseline';
 
 function App({ Component, pageProps }) {
   const apolloClient = useApollo(pageProps.initialApolloState);
@@ -20,13 +19,13 @@ function App({ Component, pageProps }) {
 
   return (
     <>
-      <ThemeProvider theme={theme}>
+      <CustomThemeProvider>
         <CssBaseline/>
         <TopBar />
         <ApolloProvider client={apolloClient}>
           <Component {...pageProps} />
         </ApolloProvider>
-      </ThemeProvider>
+      </CustomThemeProvider>
     </>
   );
 }
