@@ -18,10 +18,10 @@ const CustomThemeProvider = ({ children }) => {
   const [themeName, setThemeName] = useState("theme");
   const theme = getThemeByName(themeName);
 
-  const changeTheme = () => setThemeName(themeName === "theme" ? "theme2" : "theme")
+  const updateTheme = () => setThemeName(themeName === "theme" ? "theme2" : "theme")
 
   return (
-    <ThemeContext.Provider value={changeTheme}>
+    <ThemeContext.Provider value={{themeName, updateTheme}}>
       <ThemeProvider theme={theme}>{children}</ThemeProvider>
     </ThemeContext.Provider>
   );

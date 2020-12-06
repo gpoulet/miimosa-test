@@ -5,6 +5,8 @@ import { useApollo } from "../apollo/";
 import TopBar from '../components/TopBar'
 import CustomThemeProvider from '../components/CustomThemeProvider'
 import CssBaseline from '@material-ui/core/CssBaseline';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App({ Component, pageProps }) {
   const apolloClient = useApollo(pageProps.initialApolloState);

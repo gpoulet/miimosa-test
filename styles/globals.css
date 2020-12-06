@@ -36,3 +36,7 @@ a {
 .description {
   padding-top: 20px;
 }
+
+button.slick-arrow.slick-prev:before,button.slick-arrow.slick-next:before {
+  color: #000;
+}

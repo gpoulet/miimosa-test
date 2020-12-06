@@ -21,7 +21,7 @@ function ProjectDetails({ id, title, collected, target, status, user }) {
         subheader={user.last_name}
         action={<Status status={status}/>}
       />
-      <Photo id={id}/>
+      <Photo id={id} label={title}/>
       <CardContent>
         <Title title={title}/>
         <Money collected={collected} target={target} status={status}/>

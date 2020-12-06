@@ -7,10 +7,10 @@ import Card from "@material-ui/core/Card"
 import CardContent from '@material-ui/core/CardContent'
 import CardActions from "@material-ui/core/CardActions"
 
-function Project({ id, title, collected, target, status, user }) {
+function Project({ id, title, collected, target, status }) {
   return (
     <Card className="projectCard">
-      <Photo id={id} />
+      <Photo id={id} href={"/details/" + id} label={title} />
       <CardContent>
         <Title title={title}/>
         <Money collected={collected} target={target} status={status}/>
@@ -29,11 +29,7 @@ Project.propTypes = {
   target: number.isRequired,
   status: string.isRequired,
   description: string.isRequired,
-  imageUrl: string,
-  user: shape({
-    first_name: string.isRequired,
-    last_name: string.isRequired
-  }),
+  imageUrl: string
 };
 
 export default Project;

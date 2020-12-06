@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { useRouter } from 'next/router'
 import ProjectDetails from '../../components/ProjectDetails'
 import { useQuery } from '@apollo/client'
@@ -18,10 +19,15 @@ const Details = () => {
   if (loading)
     return <div>Loading</div>;
 
-  console.log("data", data)
   const project = data.projects.find(project => project.id === id)
 
   return (
+    <>
+      <Head>
+        <title>Miimosa Test - Détails du project {project.title}</title>
+        <link rel="icon" href="/favicon.ico"/>
+        <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width"/>
+      </Head>
     <Container maxWidth="md">
       <ProjectDetails {...project} />
       <Grid container justify="center" className="backButtonContainer">
@@ -33,6 +39,7 @@ const Details = () => {
       </Link>
       </Grid>
     </Container>
+      </>
   )
 }
 

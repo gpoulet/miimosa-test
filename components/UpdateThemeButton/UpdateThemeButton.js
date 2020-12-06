@@ -3,10 +3,11 @@ import { useContext } from 'react';
 import { ThemeContext } from '../CustomThemeProvider';
 
 function UpdateThemeButton() {
-  const changeTheme = useContext(ThemeContext);
+  const {themeName, updateTheme} = useContext(ThemeContext);
+  console.log("theme", themeName)
   return (
     <div style={{ marginLeft: "auto" }}>
-      <Button variant="contained" color="secondary" onClick={() => changeTheme('theme')}>
+      <Button variant="contained" color="secondary" onClick={() => updateTheme('theme')}>
         Changer le thème
       </Button>
     </div>

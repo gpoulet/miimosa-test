@@ -56,6 +56,7 @@ exports[`ProjectDetails failed renders correctly 1`] = `
         "paddingTop": "40%",
       }
     }
+    title="Brasserie du midi"
   />
   <div
     className="MuiCardContent-root"
@@ -151,6 +152,7 @@ exports[`ProjectDetails in progress renders correctly 1`] = `
         "paddingTop": "40%",
       }
     }
+    title="Boulangerie bio"
   />
   <div
     className="MuiCardContent-root"
@@ -275,6 +277,7 @@ exports[`ProjectDetails success renders correctly 1`] = `
         "paddingTop": "40%",
       }
     }
+    title="Cheese'up Fromagerie responsable"
   />
   <div
     className="MuiCardContent-root"

@@ -10,5 +10,26 @@ exports[`Photo renders correctly 1`] = `
       "paddingTop": "40%",
     }
   }
+  title="Titre"
 />
+`;
+
+exports[`Photo with link renders correctly 1`] = `
+<a
+  href="/link"
+  onClick={[Function]}
+  onMouseEnter={[Function]}
+>
+  <div
+    className="MuiCardMedia-root"
+    style={
+      Object {
+        "backgroundImage": "url(\\"/images/test.png\\")",
+        "height": 0,
+        "paddingTop": "40%",
+      }
+    }
+    title="titre de la photo"
+  />
+</a>
 `;

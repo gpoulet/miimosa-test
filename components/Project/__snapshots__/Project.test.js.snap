@@ -4,16 +4,23 @@ exports[`Project failed renders correctly 1`] = `
 <div
   className="MuiPaper-root MuiCard-root projectCard MuiPaper-elevation1 MuiPaper-rounded"
 >
-  <div
-    className="MuiCardMedia-root"
-    style={
-      Object {
-        "backgroundImage": "url(\\"/images/test.png\\")",
-        "height": 0,
-        "paddingTop": "40%",
+  <a
+    href="/details/test"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    <div
+      className="MuiCardMedia-root"
+      style={
+        Object {
+          "backgroundImage": "url(\\"/images/test.png\\")",
+          "height": 0,
+          "paddingTop": "40%",
+        }
       }
-    }
-  />
+      title="La ferme sans machine"
+    />
+  </a>
   <div
     className="MuiCardContent-root"
   >
@@ -85,16 +92,23 @@ exports[`Project in progress renders correctly 1`] = `
 <div
   className="MuiPaper-root MuiCard-root projectCard MuiPaper-elevation1 MuiPaper-rounded"
 >
-  <div
-    className="MuiCardMedia-root"
-    style={
-      Object {
-        "backgroundImage": "url(\\"/images/test.png\\")",
-        "height": 0,
-        "paddingTop": "40%",
+  <a
+    href="/details/test"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    <div
+      className="MuiCardMedia-root"
+      style={
+        Object {
+          "backgroundImage": "url(\\"/images/test.png\\")",
+          "height": 0,
+          "paddingTop": "40%",
+        }
       }
-    }
-  />
+      title="La ferme magique"
+    />
+  </a>
   <div
     className="MuiCardContent-root"
   >
@@ -163,16 +177,23 @@ exports[`Project success renders correctly 1`] = `
 <div
   className="MuiPaper-root MuiCard-root projectCard MuiPaper-elevation1 MuiPaper-rounded"
 >
-  <div
-    className="MuiCardMedia-root"
-    style={
-      Object {
-        "backgroundImage": "url(\\"/images/test.png\\")",
-        "height": 0,
-        "paddingTop": "40%",
+  <a
+    href="/details/test"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    <div
+      className="MuiCardMedia-root"
+      style={
+        Object {
+          "backgroundImage": "url(\\"/images/test.png\\")",
+          "height": 0,
+          "paddingTop": "40%",
+        }
       }
-    }
-  />
+      title="La ferme sans âme"
+    />
+  </a>
   <div
     className="MuiCardContent-root"
   >

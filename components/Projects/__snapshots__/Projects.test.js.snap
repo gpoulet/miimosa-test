@@ -1,20 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Projects data renders correctly 1`] = `
-<div>
+<div
+  className="MuiContainer-root MuiContainer-maxWidthMd"
+>
   <div
     className="MuiPaper-root MuiCard-root projectCard MuiPaper-elevation1 MuiPaper-rounded"
   >
-    <div
-      className="MuiCardMedia-root"
-      style={
-        Object {
-          "backgroundImage": "url(\\"/images/2c714617-c83a-4675-99f4-e7e0d3cd6c92.png\\")",
-          "height": 0,
-          "paddingTop": "40%",
+    <a
+      href="/details/2c714617-c83a-4675-99f4-e7e0d3cd6c92"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      <div
+        className="MuiCardMedia-root"
+        style={
+          Object {
+            "backgroundImage": "url(\\"/images/2c714617-c83a-4675-99f4-e7e0d3cd6c92.png\\")",
+            "height": 0,
+            "paddingTop": "40%",
+          }
         }
-      }
-    />
+        title="Boulangerie HiTekt"
+      />
+    </a>
     <div
       className="MuiCardContent-root"
     >
@@ -80,16 +89,23 @@ exports[`Projects data renders correctly 1`] = `
   <div
     className="MuiPaper-root MuiCard-root projectCard MuiPaper-elevation1 MuiPaper-rounded"
   >
-    <div
-      className="MuiCardMedia-root"
-      style={
-        Object {
-          "backgroundImage": "url(\\"/images/c6d6f6f9-07d8-4540-87a7-3b8ff8869f55.png\\")",
-          "height": 0,
-          "paddingTop": "40%",
+    <a
+      href="/details/c6d6f6f9-07d8-4540-87a7-3b8ff8869f55"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      <div
+        className="MuiCardMedia-root"
+        style={
+          Object {
+            "backgroundImage": "url(\\"/images/c6d6f6f9-07d8-4540-87a7-3b8ff8869f55.png\\")",
+            "height": 0,
+            "paddingTop": "40%",
+          }
         }
-      }
-    />
+        title="Bar smoothie Bio"
+      />
+    </a>
     <div
       className="MuiCardContent-root"
     >
@@ -155,16 +171,23 @@ exports[`Projects data renders correctly 1`] = `
   <div
     className="MuiPaper-root MuiCard-root projectCard MuiPaper-elevation1 MuiPaper-rounded"
   >
-    <div
-      className="MuiCardMedia-root"
-      style={
-        Object {
-          "backgroundImage": "url(\\"/images/65c72f0b-8906-4504-a428-120b1a741905.png\\")",
-          "height": 0,
-          "paddingTop": "40%",
+    <a
+      href="/details/65c72f0b-8906-4504-a428-120b1a741905"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    >
+      <div
+        className="MuiCardMedia-root"
+        style={
+          Object {
+            "backgroundImage": "url(\\"/images/65c72f0b-8906-4504-a428-120b1a741905.png\\")",
+            "height": 0,
+            "paddingTop": "40%",
+          }
         }
-      }
-    />
+        title="McDonald's sans conservateur"
+      />
+    </a>
     <div
       className="MuiCardContent-root"
     >
