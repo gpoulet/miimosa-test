@@ -2,6 +2,9 @@ import { string } from 'prop-types'
 import Chip from '@material-ui/core/Chip'
 import { getColorFromStatus, getLabelFromStatus } from './Status.util'
 
+/*
+  Status du projet
+ */
 function Status ({ status }) {
   return (
     <Chip className="statusChip" label={getLabelFromStatus(status)} color={getColorFromStatus(status)} />

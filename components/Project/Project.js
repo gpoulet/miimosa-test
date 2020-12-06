@@ -1,4 +1,4 @@
-import { string, number, object, shape } from "prop-types"
+import { string, number } from "prop-types"
 import Money from '../Money'
 import CardLink from '../CardLink'
 import Title from '../Title'
