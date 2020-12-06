@@ -1,30 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Miimosa Test
 
-## Getting Started
+## Informations
+Cette application utilise le framework Next.js. 
 
-First, run the development server:
+Elle se connecte via Apollo Client pour se connecter au endpoint https://landing-test-gql-endpoint.miimosa.net/graphql et récupérer une liste de projets.
+
+J'ai contruit l'interface graphique à l'aide de Material-UI.
+
+J'ai utilisé Jest pour les tests (j'ai fait le choix de mettre des tests plutôt que de l'internationalisation).
+
+En bonus, j'ai intégré Storybook pour documenter certains composants du projet à titre d'exemple.
+
+## Lancer l'application
+
+### Installer les dépendances:
+
+Si vous n'avez pas Yarn :
+```bash
+npm install -g yarn
+```
+
+Installer les dépendances via Yarn
+```bash
+yarn
+```
+
+### Démarrer l'application:
 
 ```bash
-npm run dev
-# or
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Ouvrir [http://localhost:3000](http://localhost:3000) dans le navigateur.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Lancer les tests
 
-## Learn More
+Lancer les tests avec un watcher (pratique pour développer)
+```bash
+yarn test
+```
 
-To learn more about Next.js, take a look at the following resources:
+Lancer les tests sans watcher (pour l'intégration continue ou pour lancer les tests juste une fois)
+```bash
+yarn test:ci
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Démarrer la bibliothèque de composants (Storybook):
 
-## Deploy on Vercel
+```bash
+yarn storybook
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Ouvrir [http://localhost:6006/](http://localhost:6006) dans le navigateur si besoin.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Références
+
+- Next.js : https://nextjs.org/
+- Material-UI : https://material-ui.com/
+- Jest : https://jestjs.io/
+- Storybook : https://storybook.js.org/
+- Yarn : https://yarnpkg.com/
