@@ -14,7 +14,7 @@ const Details = () => {
   const { loading, error, data } = useQuery(ALL_PROJECTS_QUERY);
 
   if (error)
-    return <div>Error loading players.</div>;
+    return <div>Error loading project details.</div>;
   if (loading)
     return <div>Loading</div>;
 

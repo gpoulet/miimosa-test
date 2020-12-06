@@ -5,3 +5,12 @@ export const getColorFromStatus = status => {
     default : return "default"
   }
 }
+
+export const getLabelFromStatus = status => {
+  switch (status) {
+    case "success": return "Succès"
+    case "in_progress": return "En cours"
+    case "failed": return "Echec"
+    default : return ""
+  }
+}

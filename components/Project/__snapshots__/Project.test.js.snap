@@ -1,0 +1,238 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project failed renders correctly 1`] = `
+<div
+  className="MuiPaper-root MuiCard-root projectCard MuiPaper-elevation1 MuiPaper-rounded"
+>
+  <div
+    className="MuiCardMedia-root"
+    style={
+      Object {
+        "backgroundImage": "url(\\"/images/test.png\\")",
+        "height": 0,
+        "paddingTop": "40%",
+      }
+    }
+  />
+  <div
+    className="MuiCardContent-root"
+  >
+    <h2
+      className="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+    >
+      La ferme sans machine
+    </h2>
+    <p
+      className="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+    >
+      34€ collectés sur 5000€ (0%)
+    </p>
+    <div
+      aria-valuemax={100}
+      aria-valuemin={0}
+      aria-valuenow={1}
+      className="MuiLinearProgress-root MuiLinearProgress-colorSecondary MuiLinearProgress-determinate"
+      role="progressbar"
+    >
+      <div
+        className="MuiLinearProgress-bar MuiLinearProgress-barColorSecondary MuiLinearProgress-bar1Determinate"
+        style={
+          Object {
+            "transform": "translateX(-99.32%)",
+          }
+        }
+      />
+    </div>
+  </div>
+  <div
+    className="MuiCardActions-root MuiCardActions-spacing"
+  >
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall"
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        <a>
+          Découvrir le projet
+        </a>
+      </span>
+      <span
+        className="MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Project in progress renders correctly 1`] = `
+<div
+  className="MuiPaper-root MuiCard-root projectCard MuiPaper-elevation1 MuiPaper-rounded"
+>
+  <div
+    className="MuiCardMedia-root"
+    style={
+      Object {
+        "backgroundImage": "url(\\"/images/test.png\\")",
+        "height": 0,
+        "paddingTop": "40%",
+      }
+    }
+  />
+  <div
+    className="MuiCardContent-root"
+  >
+    <h2
+      className="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+    >
+      La ferme magique
+    </h2>
+    <p
+      className="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+    >
+      2000€ collectés sur 5000€ (40%)
+    </p>
+    <div
+      aria-valuemax={100}
+      aria-valuemin={0}
+      aria-valuenow={40}
+      className="MuiLinearProgress-root MuiLinearProgress-colorSecondary MuiLinearProgress-determinate"
+      role="progressbar"
+    >
+      <div
+        className="MuiLinearProgress-bar MuiLinearProgress-barColorSecondary MuiLinearProgress-bar1Determinate"
+        style={
+          Object {
+            "transform": "translateX(-60%)",
+          }
+        }
+      />
+    </div>
+  </div>
+  <div
+    className="MuiCardActions-root MuiCardActions-spacing"
+  >
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall"
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        <a>
+          Découvrir le projet
+        </a>
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Project success renders correctly 1`] = `
+<div
+  className="MuiPaper-root MuiCard-root projectCard MuiPaper-elevation1 MuiPaper-rounded"
+>
+  <div
+    className="MuiCardMedia-root"
+    style={
+      Object {
+        "backgroundImage": "url(\\"/images/test.png\\")",
+        "height": 0,
+        "paddingTop": "40%",
+      }
+    }
+  />
+  <div
+    className="MuiCardContent-root"
+  >
+    <h2
+      className="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+    >
+      La ferme sans âme
+    </h2>
+    <p
+      className="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+    >
+      10000€ collectés sur 8000€ (125%)
+    </p>
+    <div
+      aria-valuemax={100}
+      aria-valuemin={0}
+      aria-valuenow={100}
+      className="MuiLinearProgress-root MuiLinearProgress-colorPrimary MuiLinearProgress-determinate"
+      role="progressbar"
+    >
+      <div
+        className="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate"
+        style={
+          Object {
+            "transform": "translateX(0%)",
+          }
+        }
+      />
+    </div>
+  </div>
+  <div
+    className="MuiCardActions-root MuiCardActions-spacing"
+  >
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeSmall MuiButton-sizeSmall"
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      <span
+        className="MuiButton-label"
+      >
+        <a>
+          Découvrir le projet
+        </a>
+      </span>
+    </button>
+  </div>
+</div>
+`;

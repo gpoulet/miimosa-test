@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Photo renders correctly 1`] = `
+<div
+  className="MuiCardMedia-root"
+  style={
+    Object {
+      "backgroundImage": "url(\\"/images/test.png\\")",
+      "height": 0,
+      "paddingTop": "40%",
+    }
+  }
+/>
+`;

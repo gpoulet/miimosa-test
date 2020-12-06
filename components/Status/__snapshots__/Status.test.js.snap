@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Status failed renders correctly 1`] = `
+<div
+  className="MuiChip-root statusChip"
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+>
+  <span
+    className="MuiChip-label"
+  >
+    Echec
+  </span>
+</div>
+`;
+
+exports[`Status in_progress renders correctly 1`] = `
+<div
+  className="MuiChip-root statusChip MuiChip-colorSecondary"
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+>
+  <span
+    className="MuiChip-label"
+  >
+    En cours
+  </span>
+</div>
+`;
+
+exports[`Status success renders correctly 1`] = `
+<div
+  className="MuiChip-root statusChip MuiChip-colorPrimary"
+  onKeyDown={[Function]}
+  onKeyUp={[Function]}
+>
+  <span
+    className="MuiChip-label"
+  >
+    Succès
+  </span>
+</div>
+`;

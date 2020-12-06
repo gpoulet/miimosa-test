@@ -1,11 +1,11 @@
 import { string, number, object, shape } from "prop-types"
+import Money from '../Money'
+import CardLink from '../CardLink'
+import Title from '../Title'
+import Photo from '../Photo'
 import Card from "@material-ui/core/Card"
 import CardContent from '@material-ui/core/CardContent'
 import CardActions from "@material-ui/core/CardActions"
-import Money from './Money'
-import CardLink from './CardLink'
-import Title from './Title'
-import Photo from './Photo'
 
 function Project({ id, title, collected, target, status, user }) {
   return (
@@ -37,16 +37,3 @@ Project.propTypes = {
 };
 
 export default Project;
-
-//
-// "collected": 15000,
-//   "description": "",
-//   "id": "c6d6f6f9-07d8-4540-87a7-3b8ff8869f55",
-//   "image_url": "",
-//   "status": "success",
-//   "target": 15000,
-//   "title": "Bar smoothie Bio",
-//   "user": {
-//     "first_name": "Lancelot",
-//     "last_name": "Little Finger"
-// }
